@@ -1454,3 +1454,50 @@
     font-size: 20px;
     display: block;
   }
+  
+
+  .text, .text2, .text3, .text4 {
+    font-family: monospace;
+    font-weight: 100;
+    font-size: 2rem; 
+    letter-spacing: -0.05em;
+    display: inline-flex; 
+    flex-flow: row;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #credits-container {
+    position: absolute;
+    top: 10px; 
+    width: 100%;
+    text-align: center; 
+    z-index: 1; 
+  }
+  
+  .letter {
+    color: green; 
+    text-shadow: 0 0 0.5rem #efffe3; 
+    display: inline-block;
+  }
+  
+  .letter.letter-2, .letter.letter-6, .letter.letter-10, .letter.letter-16, .letter.letter-20 {
+    transform: translate(0, 0.2rem) rotate(10deg);
+    animation: flicker 2s ease-in-out infinite alternate;
+  }
+  
+  @keyframes flicker {
+    0%, 5%, 6.5%, 8%, 50%, 100% {
+      opacity: 1;
+      transform: translate(0, 0.2rem) rotate(15deg); 
+    }
+    5.5%, 7% {
+      opacity: 0;
+      transform: translate(0, 0.2rem) rotate(15deg);
+    }
+    50% {
+      transform: translate(0, 0.2rem) rotate(20deg);
+    }
+  }
+  
