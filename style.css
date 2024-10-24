@@ -1480,24 +1480,88 @@
     color: green; 
     text-shadow: 0 0 0.5rem #efffe3; 
     display: inline-block;
+    animation: colorChange 6s infinite;
   }
   
-  .letter.letter-2, .letter.letter-6, .letter.letter-10, .letter.letter-16, .letter.letter-20 {
-    transform: translate(0, 0.2rem) rotate(10deg);
-    animation: flicker 2s ease-in-out infinite alternate;
-  }
-  
-  @keyframes flicker {
-    0%, 5%, 6.5%, 8%, 50%, 100% {
-      opacity: 1;
-      transform: translate(0, 0.2rem) rotate(15deg); 
+  @keyframes colorChange {
+    0% {
+     color: #3b7808;
     }
-    5.5%, 7% {
-      opacity: 0;
-      transform: translate(0, 0.2rem) rotate(15deg);
+    25% {
+      color: #70ab3f;
     }
     50% {
-      transform: translate(0, 0.2rem) rotate(20deg);
+      color: #a4c787;
     }
+    75% {
+      color: #8bde47;
+    }
+    100% {
+        color: #539120;
+    }
+}
+  
+  .letter:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .letter:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .letter:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  .letter:nth-child(4) {
+    animation-delay: 0.6s;
+  }
+  .letter:nth-child(5) {
+    animation-delay: 0.8s;
+  }
+  .letter:nth-child(6) {
+    animation-delay: 1s;
+  }
+  .letter:nth-child(7) {
+    animation-delay: 1.2s;
+  }
+  .letter:nth-child(8) {
+    animation-delay: 1.4s;
+  }
+  .letter:nth-child(9) {
+    animation-delay: 1.6s;
+  }
+  .letter:nth-child(10) {
+    animation-delay: 1.8s;
+  }
+  .letter:nth-child(11) {
+    animation-delay: 2s;
+  }
+  .letter:nth-child(12) {
+    animation-delay: 2.2s;
+  }
+  .letter:nth-child(13) {
+    animation-delay: 2.4s;
+  }
+  .letter:nth-child(14) {
+    animation-delay: 2.6s;
+  }
+  .letter:nth-child(15) {
+    animation-delay: 2.8s;
+  }
+  .letter:nth-child(16) {
+    animation-delay: 3s;
+  }
+  .letter:nth-child(17) {
+    animation-delay: 3.2s;
+  }
+  .letter:nth-child(18) {
+    animation-delay: 3.4s;
+  }
+  .letter:nth-child(19) {
+    animation-delay: 3.6s;
+  }
+  .letter:nth-child(20) {
+    animation-delay: 3.8s;
+  }
+  .letter:nth-child(21) {
+    animation-delay: 4s;
   }
   
