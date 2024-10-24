@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokémon Web Game</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <div id="bagScreen">
+   <div id="bagText"> BAG: &nbsp &nbsp &nbsp 
+    <input id="xBtn" type="image" src="x.png" width = "30" height="30"/> </div>
+    <div id=Cslot1></div>
+    <div id=Cslot2></div>
+    <div id=Cslot3></div>
+    <div id=Cslot4></div>
+    <div id=Cslot5></div>
+    <button id="SslotBtn1"></button>
+    <button id="SslotBtn2"></button>
+    <button id="SslotBtn3"></button>
+    <button id="SslotBtn4"></button>
+    <button id="SslotBtn5"></button>
+    <div id=Sslot1></div>
+    <div id=Sslot2></div>
+    <div id=Sslot3></div>
+    <div id=Sslot4></div>
+    <div id=Sslot5></div>
+    <div id="enterArena"> Enter Arena! </div>
+    <button id="enterArenaBtn"> Enter Arena! </button>
+    <img id=pikaIc src="pikachu.png">
+    <img id=eevIc src="eevee.png">
+    <img id=charIc src="charmander.png">
+    <img id=squirtIc src="squirtle.png">
+    <img id=magiIc src="magikarp.png">
+  </div>
+  <div id="endIntro">
+    <div id="youLost"> <span id="bigL" style="font-size: 100px; color: white;"> YOU LOSE! </span> <br> Refresh the webpage to play again.</div>
+    <img id="villainLarge" src="villainLarge.png"> 
+    <img id="sBubbleLeft" src="sBubbleLeft.png">
+    <button id="yesBattle"> Yes! </button>
+    <button id="noBattle"> No </button>
+    <button id="arrowLS"> --> </button>
+    <button id="enterA"> OK </button>
+    <button id="goToBI"> Let's Go! </button>
+    <div id="sBubbleText"> HEY! I see you found all the Pokémon in this area. Well, I RULE this area. Do you think you can defeat my Pokémon in battle? </div>
+  </div>
+  <input id="bag" type="image" src="bag.png" width = "55" height="55"/>
+  <div id="rectangle">
+    <span id="topRec"></span>
+    <button id="btn1"> YES </button>
+    <button id="btn2"> NO </button>
+    <input id="pokeball" type="image" src="pokeball.png" width="110" height="110"/>
+    <input id="greatball" type="image" src="greatball.png" width="110" height="110"/>
+    <input id="ultraball" type="image" src="ultraball.png" width="110" height="110"/>
+    <input id="masterball" type="image" src="masterball.png" width="110" height="110"/>
+    <button id="math1"></button>
+    <button id="math2"></button>
+    <button id="math3"></button>
+    <button id="math4"></button>
+    <button id="singleBtn"> THROW </button>
+    <button id="ok1"> OK </button>
+    <button id="ok2"> OK </button>
+  </div>
+  <div id="instructions">
+  <span id="InsSpan" style="font-size: 30px;"> INSTRUCTIONS: </span> 
+<ul> 
+  <li>Use the arrow keys to walk</li> <br>
+  <li>Walk over a bush and press enter to investigate</li> <br>
+  <li>Solve math problems to catch the Pokémon</li> <br> 
+  <li>Click the bag icon to access your Pokémon</li> <br>
+  <li>Take your Pokémon to battle!</li> <br>
+</ul>
+    <button id="okInt"> PLAY </button>
+  </div>
+  <canvas id="canvas1"></canvas>
+  <img id="bush1" src="bush.png" width = "40" height = "40">
+  <img id="bush2" src="bush.png" width = "40" height = "40">
+  <img id="bush3" src="bush.png" width = "40" height = "40">
+  <img id="bush4" src="bush.png" width = "40" height = "40">
+  <img id="bush5" src="bush.png" width = "40" height = "40">
+  <img id="houses" src="houses.png" width = "130" height = "500">
+  <img id="pikachu" src="pikachu.png" width = "100" height = "70">
+  <img id="eevee" src="eevee.png" width = "70" height = "50">
+  <img id="magikarp" src="magikarp.png" width = "70" height = "50">
+  <img id="charmander" src="charmander.png" width = "50" height = "50">
+  <img id="squirtle" src="squirtle.png" width = "70" height = "40">
+  <img id="arena" src="arena.png">
+  <div id="battleInst">
+  <span id="battleSpn" style="font-size: 31px;"> RULES: </span> 
+Once your Pokémon is sent into the arena, you will have 5 seconds to click a button as many times as you can to power it up. The amount of clicks you get is the amount of damage that will be done to your opponents’ Pokémon. Your opponent will also do damage to your Pokémon, which you can see using their health bars. Your Pokémon’s type will impact the effectiveness of attacks. See type chart for more info. Try to defeat him before all your Pokémon faint!
+  <button id="battleBtn"> BATTLE! </button>
+  <button id="typeChart"> Type Chart </button>
+  </div>
+  <img id="typeChartImg" src="typeChart.png" width = "382" height = "569"> 
+  <input id="redX" type="image" src="redX.png" width = "30" height="30"/>
+  <img id="battlePikachu" src="pikachu.png">
+  <img id="battleCharmander" src="charmander.png">
+  <img id="battleEevee" src="eevee.png">
+  <img id="battleSquirtle" src="squirtle.png">
+  <img id="battleMagikarp" src="magikarp.png">
+
+  <img id="kabutops" src="kabutops.png">
+  <img id="bulbasaur" src="bulbasaur.png">
+  <img id="steelix" src="steelix.png">
+
+  <div id="healthBar1">
+    <div id="namePlate1"></div>
+    <div id="typePlate1"></div>
+    <div id="healthPlate1"></div>
+    <img id="fullHealth1" src="fullHealth.png">
+    <img id="halfHealth1" src="halfHealth.png">
+    <img id="emptyHealth1" src="emptyHealth.png">
+  </div>
+  <div id="healthBar2">
+    <div id="namePlate2"></div>
+    <div id="typePlate2"></div>
+    <div id="healthPlate2"></div>
+    <img id="fullHealth2" src="fullHealth.png">
+    <img id="halfHealth2" src="halfHealth.png">
+    <img id="emptyHealth2" src="emptyHealth.png">
+  </div>
+  <button id="attackBtn"> ATTACK </button>
+  <div id="attackBtnGrey"> <br> ATTACK </div>
+  <div id="attackBtnDiv">
+  <div id="attackInst"> Spam click in... </div> 
+  <div id="attackCounter"> 3 </div>
+  <button id="spamBtn">⇪</button>
+  <button id="nextAttackBtn"> OK </button>
+  <button id="abtToLose"> OK </button>
+  <button id="abtToWin"> OK </button>
+  <button id="abtToTie"> OK </button>
+  </div>
+  <div id="yoursFainted"> <br> Oh no! Looks like all your Pokémon fainted.
+  <button id="goLoseScreen"> --> </button>
+  </div>
+  <div id="hisFainted"> <br> You defeated all of the evil trainer's Pokémon! 
+  <button id="goWinScreen"> --> </button>
+  </div>
+  <div id="bothFainted"> You knocked each other's Pokémon out! All of them fainted. 
+  <button id="goTieScreen"> --> </button>
+  </div>
+  <div id="youWin"> <br> <span id="bigW" style="font-size: 100px; color: white;"> YOU WIN! </span> <br> Refresh the webpage to play again.</div>
+  <div id="youLose"> <br> <span id="bigW" style="font-size: 100px; color: white;"> YOU LOSE! </span> <br> Refresh the webpage to play again.</div>
+  <div id="youTie"><br><span id="bigT" style="font-size: 100px; color: white;"> YOU TIED! </span> <br> Refresh the webpage to play again.</div>
+  
+  
+  <script src="script.js"></script>
+</body>
+</html>

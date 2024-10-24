@@ -1,0 +1,1456 @@
+#canvas1 {
+    width: 800px;
+    height: 500px;
+    border: 1px solid black;
+    background-color: green;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  #arena{
+    width: 800px;
+    height: 500px;
+    border: 1px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+  
+  #bush1 {
+    display: none;
+  }
+  
+  #bush2 {
+    display: none;
+  }
+  
+  #bush3 {
+    display: none;
+  }
+  
+  #bush4 {
+    display: none;
+  }
+  
+  #bush5 {
+    display: none;
+  }
+  
+  #houses {
+    display: none;
+  }
+  
+  #pikachu {
+    display: none;
+  }
+  
+  #squirtle {
+    display: none;
+  }
+  
+  #charmander {
+    display: none;
+  }
+  
+  #eevee {
+    display: none;
+  }
+  
+  #magikarp {
+    display: none;
+  }
+  
+  #rectangle {
+    position: absolute;
+    border: 10px white;
+    border-style: outset;
+    background-color: rgba(62,61,61,0.6);
+    width: 550px;
+    height: 300px;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+  
+  #topRec {
+    border-radius: 10px;
+    border: 2px outset white;
+    opacity: 100%;
+    position: absolute;
+    background-color: gray;
+    width: 450px;
+    height: 50px;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    display: block;
+    padding: 15px;
+    font-family: monospace;
+    color: white;
+    font-size: 20px;
+    text-align: center; 
+  }
+  
+  #btn1 {
+    z-index: 2;
+    background-color: gray;
+    border-color: white;
+    border-radius: 10px;
+    width: 140px;
+    height: 80px;
+    margin-left: 90px;
+    margin-top: 170px; 
+    font-family: monospace;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+  } 
+  
+  #btn2 {
+    z-index: 2;
+    background-color: gray;
+    border-color: white;
+    border-radius: 10px;
+    width: 140px;
+    height: 80px;
+    margin-left: 300px;
+    margin-top: 170px; 
+    font-family: monospace;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+  } 
+  
+  #pokeball {
+    position: absolute;
+    z-index: 2;
+    margin-left: 60px;
+    margin-top: 135px; 
+    display: none;
+  }
+  
+  #greatball {
+    position: absolute;
+    z-index: 2;
+    margin-left: 170px;
+    margin-top: 135px; 
+    display: none;
+  }
+  
+  #ultraball {
+    position: absolute;
+    z-index: 2;
+    margin-left: 280px;
+    margin-top: 135px; 
+    display: none;
+  }
+  
+  #masterball {
+    position: absolute;
+    z-index: 2;
+    margin-left: 390px;
+    margin-top: 135px; 
+    display: none;
+  }
+  
+  #math1 {
+    position: absolute;
+    z-index: 2;
+    background-color: gray;
+    border-color: white;
+    border-radius: 10px;
+    width: 110px;
+    height: 80px;
+    margin-left: 40px;
+    margin-top: 160px; 
+    font-family: monospace;
+    color: white;
+    font-size: 20px;
+    display: none;
+  } 
+  
+  #math2 {
+    position: absolute;
+    z-index: 2;
+    background-color: gray;
+    border-color: white;
+    border-radius: 10px;
+    width: 110px;
+    height: 80px;
+    margin-left: 160px;
+    margin-top: 160px; 
+    font-family: monospace;
+    color: white;
+    font-size: 20px;
+    display: none;
+  }
+  
+  #math3 {
+    position: absolute;
+    z-index: 2;
+    background-color: gray;
+    border-color: white;
+    border-radius: 10px;
+    width: 110px;
+    height: 80px;
+    margin-left: 280px;
+    margin-top: 160px; 
+    font-family: monospace;
+    color: white;
+    font-size: 20px;
+    display: none;
+  }
+  
+  #math4 {
+    position: absolute;
+    z-index: 2;
+    background-color: gray;
+    border-color: white;
+    border-radius: 10px;
+    width: 110px;
+    height: 80px;
+    margin-left: 400px;
+    margin-top: 160px; 
+    font-family: monospace;
+    color: white;
+    font-size: 20px;
+    display: none;
+  }
+  
+  #singleBtn {
+    z-index: 2;
+    background-color: gray;
+    border-color: white;
+    border-radius: 10px;
+    width: 150px;
+    height: 90px;
+    margin-left: 190px;
+    margin-top: 150px; 
+    font-family: monospace;
+    color: white;
+    font-size: 20px;
+    display: none;
+  } 
+  
+  #ok1 {
+    z-index: 2;
+    background-color: gray;
+    border-color: white;
+    border-radius: 10px;
+    width: 150px;
+    height: 90px;
+    margin-left: 190px;
+    margin-top: 150px; 
+    font-family: monospace;
+    color: white;
+    font-size: 20px;
+    display: none;
+  } 
+  
+  #ok2 {
+    z-index: 2;
+    background-color: gray;
+    border-color: white;
+    border-radius: 10px;
+    width: 150px;
+    height: 90px;
+    margin-left: 190px;
+    margin-top: 150px; 
+    font-family: monospace;
+    color: white;
+    font-size: 20px;
+    display: none;
+  } 
+  
+  #instructions {
+    position: absolute;
+    border: 10px white;
+    border-style: outset;
+    background-color: rgba(62,61,61,0.8);
+    width: 550px;
+    height: 300px;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    padding: 15px;
+    font-family: monospace;
+    color: white;
+    font-size: 15px;
+    text-align: left; 
+  }
+  
+  #InsSpan {
+    padding-left: 27%;
+  }
+  
+  #okInt {
+    z-index: 2;
+    background-color: #a19b9b;
+    border-color: white;
+    border-radius: 10px;
+    width: 130px;
+    height: 70px;
+    margin-left: 200px;
+    margin-top: -10px; 
+    font-family: monospace;
+    color: white;
+    font-size: 20px;
+    display: block;
+  }
+  
+  #bag {
+    z-index: 1;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 350px;
+    margin-top: -210px;
+  }
+  
+  #bagScreen {
+    position: absolute;
+    border: 10px white;
+    border-style: outset;
+    background-color: rgba(62,61,61,0.6);
+    width: 400px;
+    height: 450px;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: monospace;
+    color: white;
+    font-size: 30px;
+    text-align: right; 
+    display: none;
+    padding-top: 10px;
+  }
+  
+  #xBtn {
+    z-index: 2;
+    margin-right: 10px;
+  }
+  
+  #bagText{
+    padding: 0;
+  }
+  
+  #Cslot1 {
+    z-index: 2;
+    position: absolute;
+    background-color: gray;
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+    margin-left: 40px;
+    margin-top: 30px; 
+    display: block;
+    border: 2px white;
+    border-style: outset;
+  }
+  
+  #Cslot2 {
+    z-index: 2;
+    position: absolute;
+    background-color: gray;
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+    margin-left: 40px;
+    margin-top: 100px; 
+    display: block;
+    border: 2px white;
+    border-style: outset;
+  }
+  
+  #Cslot3 {
+    z-index: 2;
+    position: absolute;
+    background-color: gray;
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+    margin-left: 40px;
+    margin-top: 170px; 
+    display: block;
+    border: 2px white;
+    border-style: outset;
+  }
+  
+  #Cslot4 {
+    z-index: 2;
+    position: absolute;
+    background-color: gray;
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+    margin-left: 40px;
+    margin-top: 240px; 
+    display: block;
+    border: 2px white;
+    border-style: outset;
+  }
+  
+  #Cslot5 {
+    z-index: 2;
+    position: absolute;
+    background-color: gray;
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+    margin-left: 40px;
+    margin-top: 315px; 
+    display: block;
+    border: 2px white;
+    border-style: outset;
+  }
+  
+  #Sslot1 {
+    z-index: 2;
+    position: absolute;
+    background-color: gray;
+    width: 250px;
+    height: 45px;
+    margin-left: 120px;
+    margin-top: 30px; 
+    display: block;
+    border: 2px white;
+    border-style: outset;
+    font-family: monospace;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  #SslotBtn1 {
+    z-index: 2;
+    position: absolute;
+    background-color: gray;
+    border-color: white;
+    width: 252px;
+    height: 47px;
+    margin-left: 120px;
+    margin-top: 30px; 
+    display: none;
+    font-family: monospace;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  #Sslot2 {
+    z-index: 2;
+    position: absolute;
+    background-color: gray;
+    width: 250px;
+    height: 45px;
+    margin-left: 120px;
+    margin-top: 100px; 
+    display: block;
+    border: 2px white;
+    border-style: outset;
+    font-family: monospace;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  #SslotBtn2 {
+    z-index: 2;
+    position: absolute;
+    background-color: gray;
+    border-color: white;
+    width: 252px;
+    height: 47px;
+    margin-left: 120px;
+    margin-top: 100px; 
+    display: none;
+    font-family: monospace;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  #Sslot3 {
+    z-index: 2;
+    position: absolute;
+    background-color: gray;
+    width: 250px;
+    height: 45px;
+    margin-left: 120px;
+    margin-top: 170px; 
+    display: block;
+    border: 2px white;
+    border-style: outset;
+    font-family: monospace;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  #SslotBtn3 {
+    z-index: 2;
+    position: absolute;
+    background-color: gray;
+    border-color: white;
+    width: 252px;
+    height: 47px;
+    margin-left: 120px;
+    margin-top: 170px; 
+    display: none;
+    font-family: monospace;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  #Sslot4 {
+    z-index: 2;
+    position: absolute;
+    background-color: gray;
+    width: 250px;
+    height: 45px;
+    margin-left: 120px;
+    margin-top: 240px; 
+    display: block;
+    border: 2px white;
+    border-style: outset;
+    font-family: monospace;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  #SslotBtn4 {
+    z-index: 2;
+    position: absolute;
+    background-color: gray;
+    border-color: white;
+    width: 252px;
+    height: 47px;
+    margin-left: 120px;
+    margin-top: 240px; 
+    display: none;
+    font-family: monospace;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  #Sslot5 {
+    z-index: 2;
+    position: absolute;
+    background-color: gray;
+    width: 250px;
+    height: 45px;
+    margin-left: 120px;
+    margin-top: 315px; 
+    display: block;
+    border: 2px white;
+    border-style: outset;
+    font-family: monospace;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  #SslotBtn5 {
+    z-index: 2;
+    position: absolute;
+    background-color: gray;
+    border-color: white;
+    width: 252px;
+    height: 47px;
+    margin-left: 120px;
+    margin-top: 315px; 
+    display: none;
+    font-family: monospace;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  #enterArena{
+    z-index: 2;
+    position: absolute;
+    border-radius: 15px;
+    background-color: gray;
+    width: 300px;
+    height: 20px;
+    margin-left: 60px;
+    margin-top: 375px; 
+    display: none;
+    border: 2px gray;
+    border-style: outset;
+    font-family: monospace;
+    color: white;
+    font-size: 19px;
+    text-align: center;
+    opacity: 60%;
+  }
+  
+  #enterArenaBtn{
+    z-index: 5;
+    position: absolute;
+    border-radius: 15px;
+    background-color: gray;
+    width: 304px;
+    height: 24px;
+    margin-left: 60px;
+    margin-top: 375px; 
+    border: 2px white;
+    border-style: outset;
+    font-family: monospace;
+    color: white;
+    font-size: 19px;
+    text-align: center;
+    display: none;
+  }
+  
+  #pikaIc{
+    z-index: 2;
+    position: absolute;
+    width: 100px;
+    height: 80px;
+    margin-left: 35px;
+    margin-top: 28px; 
+    display: none;
+  }
+  
+  #eevIc{
+    z-index: 2;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    margin-left: 35px;
+    margin-top: 95px; 
+    display: none;
+  }
+  
+  #charIc{
+    z-index: 2;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-left: 43px;
+    margin-top: 178px; 
+    display: none;
+  }
+  
+  #squirtIc{
+    z-index: 2;
+    position: absolute;
+    width: 65px;
+    height: 60px;
+    margin-left: 38px;
+    margin-top: 240px; 
+    display: none;
+  }
+  
+  #magiIc{
+    z-index: 2;
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    margin-left: 50px;
+    margin-top: 315px; 
+    display: none;
+  }
+  
+  #endIntro{
+    position: absolute;
+    border: 10px white;
+    border-style: outset;
+    background-color: rgba(62,61,61,0.8);
+    width: 550px;
+    height: 300px;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none; 
+    padding: 15px;
+    font-family: monospace;
+    color: white;
+    font-size: 15px;
+    text-align: left; 
+  }
+  
+  #villainLarge{
+    position: absolute;
+    width: 212px;
+    height: 294px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: -200px;
+    margin-top: 20px;
+  }
+  
+  #sBubbleLeft{
+    position: absolute;
+    width: 475px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 80px;
+    margin-top: -70px;
+  }
+  
+  #sBubbleText {
+    position: absolute;
+    background-color: white;
+    width: 320px;
+    height: 45px;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 70px;
+    margin-top: -95px;
+    display: block;
+    font-family: monospace;
+    color: black;
+    font-size: 12px;
+    text-align: left; 
+  }
+  
+  #yesBattle{
+    z-index: 2;
+    position: absolute;
+    background-color: gray;
+    border-color: white;
+    border-radius: 10px;
+    width: 150px;
+    height: 90px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: -10px;
+    margin-top: 60px; 
+    font-family: monospace;
+    color: white;
+    font-size: 20px;
+    display: block;
+  }
+  
+  #noBattle{
+    z-index: 2;
+    position: absolute;
+    background-color: gray;
+    border-color: white;
+    border-radius: 10px;
+    width: 150px;
+    height: 90px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 170px;
+    margin-top: 60px; 
+    font-family: monospace;
+    color: white;
+    font-size: 20px;
+    display: block;
+  }
+  
+  #arrowLS{
+    z-index: 2;
+    position: absolute;
+    background-color: gray;
+    border-color: white;
+    border-radius: 10px;
+    width: 150px;
+    height: 90px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 50px;
+    margin-top: 60px; 
+    font-family: monospace;
+    color: white;
+    font-size: 20px;
+    display: none;
+  }
+  
+  #youLost{
+    z-index: 3;
+    position: absolute;
+    display: none;
+    text-align: center;
+    margin-top: 50px;
+    color: red;
+    font-size: 25px;
+  }
+  
+  #youWin{
+    position: absolute;
+    border: 10px green;
+    border-style: outset;
+    background-color: rgba(62,61,61,0.8);
+    width: 550px;
+    height: 300px;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    padding: 15px;
+    font-family: monospace;
+    color: green;
+    font-size: 25px;
+    text-align: center; 
+  }
+  
+  #youLose{
+    position: absolute;
+    border: 10px red;
+    border-style: outset;
+    background-color: rgba(62,61,61,0.8);
+    width: 550px;
+    height: 300px;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    padding: 15px;
+    font-family: monospace;
+    color: red;
+    font-size: 25px;
+    text-align: center; 
+  }
+  
+  #youTie{
+    position: absolute;
+    border: 10px lightskyblue;
+    border-style: outset;
+    background-color: rgba(62,61,61,0.8);
+    width: 550px;
+    height: 300px;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    padding: 15px;
+    font-family: monospace;
+    color: lightskyblue;
+    font-size: 25px;
+    text-align: center; 
+  }
+   
+  #enterA{
+    z-index: 2;
+    position: absolute;
+    background-color: gray;
+    border-color: white;
+    border-radius: 10px;
+    width: 150px;
+    height: 90px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 50px;
+    margin-top: 60px; 
+    font-family: monospace;
+    color: white;
+    font-size: 20px;
+    display: none;
+  }
+  
+  #goToBI{
+    z-index: 2;
+    position: absolute;
+    background-color: gray;
+    border-color: white;
+    border-radius: 10px;
+    width: 150px;
+    height: 90px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 50px;
+    margin-top: 60px; 
+    font-family: monospace;
+    color: white;
+    font-size: 20px;
+    display: none;
+  }
+  
+  #battleInst{
+    position: absolute;
+    border: 10px white;
+    border-style: outset;
+    background-color: rgba(62,61,61,0.9);
+    width: 550px;
+    height: 300px;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    padding: 15px;
+    font-family: monospace;
+    color: white;
+    font-size: 16px;
+    text-align: left; 
+  }
+  
+  #battleBtn{
+    z-index: 2;
+    background-color: #a19b9b;
+    border-color: white;
+    border-radius: 10px;
+    width: 130px;
+    height: 70px;
+    margin-left: 110px;
+    margin-top: 30px; 
+    font-family: monospace;
+    color: white;
+    font-size: 20px;
+    display: block;
+    position: absolute;
+  }
+  
+  #typeChart{
+    z-index: 2;
+    background-color: #a19b9b;
+    border-color: white;
+    border-radius: 10px;
+    width: 130px;
+    height: 70px;
+    margin-left: 300px;
+    margin-top: 30px; 
+    font-family: monospace;
+    color: white;
+    font-size: 20px;
+    display: block;
+    position: absolute;
+  }
+  
+  #typeChartImg{
+    display: none;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+  
+  #redX{
+    z-index: 4;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 185px;
+    margin-top: -280px;
+    display: none;
+    position: absolute;
+  }
+  
+  #battlePikachu{
+    z-index: 2;
+    position: absolute;
+    width: 160px;
+    height: 140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scaleX(-1);
+    margin-top: 40px;
+    margin-left: -100px;
+    display: none;
+  }
+  
+  #battleCharmander{
+    z-index: 2;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scaleX(-1);
+    margin-top: 30px;
+    margin-left: -80px;
+    display: none;
+  }
+  
+  #battleEevee{
+    z-index: 2;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scaleX(-1);
+    margin-top: 20px;
+    margin-left: -80px;
+    display: none;
+  }
+  
+  #battleSquirtle{
+    z-index: 2;
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scaleX(-1);
+    margin-top: 30px;
+    margin-left: -80px;
+    display: none;
+  }
+  
+  #battleMagikarp{
+    z-index: 2;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scaleX(-1);
+    margin-top: 30px;
+    margin-left: -100px;
+    display: none;
+  }
+  
+  
+  #kabutops{
+    z-index: 2;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 30px;
+    margin-left: 105px;
+    display: none;
+  }
+  
+  #bulbasaur{
+    z-index: 2;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 50px;
+    margin-left: 125px;
+    display: none;
+  }
+  
+  #steelix{
+    z-index: 2;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 30px;
+    margin-left: 105px;
+    display: none;
+  }
+  
+  #healthBar1 {
+    position: absolute;
+    border: 5px white;
+    border-style: outset;
+    background-color: gray;
+    width: 250px;
+    height: 50px;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -180px;
+    margin-left: -230px;
+    display: none;
+    padding: 15px;
+    font-family: monospace;
+    color: white;
+    font-size: 20px;
+  }
+  
+  #healthBar2 {
+    position: absolute;
+    border: 5px white;
+    border-style: outset;
+    background-color: gray;
+    width: 250px;
+    height: 50px;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -180px;
+    margin-left: 230px;
+    display: none;
+    padding: 15px;
+    font-family: monospace;
+    color: white;
+    font-size: 20px;
+  }
+  
+  #namePlate1{
+    text-align: left;
+    position: absolute;
+  }
+  
+  #namePlate2{
+    text-align: left;
+    position: absolute;
+  }
+  
+  #typePlate1{
+    text-align: right;
+  }
+  
+  #typePlate2{
+    text-align: right;
+  }
+  
+  #healthPlate1{
+    text-align: left;
+  }
+  
+  #healthPlate2{
+    text-align: left;
+  }
+  
+  #fullHealth1{
+    width: 200px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 15px;
+    margin-left: 35px;
+  }
+  
+  #halfHealth1{
+    width: 200px;
+    height: 40px;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 11px;
+    margin-left: 39px;
+  }
+  
+  #emptyHealth1{
+    width: 200px;
+    height: 40px;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 13px;
+    margin-left: 39px;
+  }
+  
+  #fullHealth2{
+    width: 200px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 15px;
+    margin-left: 35px;
+  }
+  
+  #halfHealth2{
+    width: 200px;
+    height: 40px;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 11px;
+    margin-left: 39px;
+  }
+  
+  #emptyHealth2{
+    width: 200px;
+    height: 40px;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 13px;
+    margin-left: 39px;
+  }
+  
+  #attackBtn {
+    position: absolute;
+    border: 2px white;
+    border-radius: 15px;
+    border-style: outset;
+    background-color: rgba(62,61,61,0.6);
+    width: 200px;
+    height: 50px;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 215px;
+    display: none;
+    padding: 15px;
+    font-family: monospace;
+    color: white;
+    font-size: 20px;
+  }
+  
+  #attackBtnGrey{
+    position: absolute;
+    border: 2px white;
+    border-radius: 15px;
+    border-style: outset;
+    background-color: rgba(62,61,61,0.3);
+    width: 200px;
+    height: 50px;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 215px;
+    display: none;
+    font-family: monospace;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  #attackBtnDiv{
+    position: absolute;
+    border: 5px white;
+    border-style: outset;
+    background-color: rgba(62,61,61,0.8);
+    width: 500px;
+    height: 400px;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    padding: 15px;
+    font-family: monospace;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+  }
+  
+  #nextAttackBtn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 140px;
+    z-index: 2;
+    background-color: gray;
+    border-color: white;
+    border-radius: 10px;
+    width: 150px;
+    height: 90px;
+    font-family: monospace;
+    color: white;
+    font-size: 20px;
+    display: none;
+  }
+  
+  #abtToLose{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 140px;
+    z-index: 2;
+    background-color: gray;
+    border-color: white;
+    border-radius: 10px;
+    width: 150px;
+    height: 90px;
+    font-family: monospace;
+    color: white;
+    font-size: 20px;
+    display: none;
+  }
+  
+  #abtToWin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 140px;
+    z-index: 2;
+    background-color: gray;
+    border-color: white;
+    border-radius: 10px;
+    width: 150px;
+    height: 90px;
+    font-family: monospace;
+    color: white;
+    font-size: 20px;
+    display: none;
+  }
+  
+  #abtToTie{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 140px;
+    z-index: 2;
+    background-color: gray;
+    border-color: white;
+    border-radius: 10px;
+    width: 150px;
+    height: 90px;
+    font-family: monospace;
+    color: white;
+    font-size: 20px;
+    display: none;
+  }
+  
+  #attackCounter{
+    font-size: 250px;
+  }
+  
+  #spamBtn{
+    z-index: 2;
+    position: absolute;
+    background-color: gray;
+    border-color: white;
+    border-radius: 150px;
+    width: 300px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 35px;
+    font-size: 200px;
+    display: none;
+  }
+  
+  #yoursFainted{
+    position: absolute;
+    border: 10px white;
+    border-style: outset;
+    background-color: rgba(62,61,61,0.8);
+    width: 550px;
+    height: 300px;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    padding: 15px;
+    font-family: monospace;
+    color: white;
+    font-size: 35px;
+    text-align: center; 
+  }
+  
+  #hisFainted{
+    position: absolute;
+    border: 10px white;
+    border-style: outset;
+    background-color: rgba(62,61,61,0.8);
+    width: 550px;
+    height: 300px;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    padding: 15px;
+    font-family: monospace;
+    color: white;
+    font-size: 35px;
+    text-align: center; 
+  }
+  
+  #bothFainted{
+    position: absolute;
+    border: 10px white;
+    border-style: outset;
+    background-color: rgba(62,61,61,0.8);
+    width: 550px;
+    height: 300px;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    padding: 15px;
+    font-family: monospace;
+    color: white;
+    font-size: 35px;
+    text-align: center; 
+  }
+  
+  #goWinScreen{
+    z-index: 2;
+    background-color: gray;
+    border-color: white;
+    border-radius: 10px;
+    width: 150px;
+    height: 90px;
+    margin-left: 190px;
+    margin-top: 70px; 
+    font-family: monospace;
+    color: white;
+    font-size: 20px;
+    display: block;
+  }
+  
+  #goLoseScreen{
+    z-index: 2;
+    background-color: gray;
+    border-color: white;
+    border-radius: 10px;
+    width: 150px;
+    height: 90px;
+    margin-left: 190px;
+    margin-top: 70px; 
+    font-family: monospace;
+    color: white;
+    font-size: 20px;
+    display: block;
+  }
+  
+  #goTieScreen{
+    z-index: 2;
+    background-color: gray;
+    border-color: white;
+    border-radius: 10px;
+    width: 150px;
+    height: 90px;
+    margin-left: 190px;
+    margin-top: 70px; 
+    font-family: monospace;
+    color: white;
+    font-size: 20px;
+    display: block;
+  }
