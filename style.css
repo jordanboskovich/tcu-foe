@@ -1470,14 +1470,14 @@
   
   #credits-container {
     position: absolute;
-    top: 10px; 
+    bottom: 10px; 
     width: 100%;
     text-align: center; 
     z-index: 1; 
   }
   
   .letter {
-    color: green; 
+    color: #5f1296; 
     text-shadow: 0 0 0.5rem #efffe3; 
     display: inline-block;
     animation: colorChange 6s infinite;
@@ -1485,19 +1485,19 @@
   
   @keyframes colorChange {
     0% {
-     color: #3b7808;
+     color: #5f1296;
     }
     25% {
-      color: #70ab3f;
+      color: #862fc4;
     }
     50% {
-      color: #a4c787;
+      color: #b061e8;
     }
     75% {
-      color: #8bde47;
+      color: #6c428a;
     }
     100% {
-        color: #539120;
+        color: #5f1296;
     }
 }
   
@@ -1565,3 +1565,16 @@
     animation-delay: 4s;
   }
   
+
+  #new-text {
+    font-family: monospace;
+    font-size: 1.1rem; 
+    color: #5f1296;
+    text-align: center;
+    margin-top: 20px; 
+  }
+  
+  #new-text span {
+    display: inline-block;
+    margin: 0 5px; 
+  }
